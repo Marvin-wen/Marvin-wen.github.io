@@ -1,5 +1,5 @@
 # Marvin-wen.github.io
-前端期末大作业\n
+前端期末大作业<br/>
 主体架构基于Bootstrap
 能够完全实现自适应
 导航栏下有水波纹效果
