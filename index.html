@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<title></title>
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" >
+		<script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+		<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.js"></script>
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+		<script type="text/javascript" src="../js/common.js"></script>
+		<link type="text/css" rel="stylesheet" href="../css/basement.css"/>
+		<style>
+			.navbar {
+				background-color: rgba(0, 0, 0, .5);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="navbar-bg">
+			<nav class="navbar navbar-expand-lg navbar-dark">
+				<a class="navbar-brand" href="#">华夏影视</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="#">首页</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="tv.html">电视剧</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="movie.html">电影</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="show.html">综艺</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="animation.html">动漫</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+							 aria-haspopup="true" aria-expanded="false">
+								个人中心
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="message.html">消息列表</a>
+								<a class="dropdown-item" href="history.html">历史记录</a>
+							</div>
+						</li>
+					</ul>
+					<form class="form-inline my-2 my-lg-0">
+						<input class="form-control mr-sm-2" type="search" placeholder="发现更大的世界" aria-label="Search">
+						<button class="btn btn-outline-success my-2 my-sm-0" type="submit">搜索</button>
+						<button class="btn btn-outline-danger my-2 my-sm-0" type="button"><a href="login.html">登录 | 注册</a></button>
+					</form>
+				</div>
+			</nav>
+		</div>
+		<main>
+			<div class="container-fluid">
+				<h5><img src="../images/tuijian.svg">每日推荐</h5>
+				<div class="row">
+					<div class="col-md-6 col-sm-12">
+						<div id="demo" class="carousel slide" data-ride="carousel">
+
+							<!-- 指示符 -->
+							<ul class="carousel-indicators">
+								<li data-target="#demo" data-slide-to="0" class="active"></li>
+								<li data-target="#demo" data-slide-to="1"></li>
+								<li data-target="#demo" data-slide-to="2"></li>
+							</ul>
+
+							<!-- 轮播图片 -->
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<a href="video.html"><img src="../images/1-1.jpg"></a>
+									<div class="carousel-caption d-none d-md-block">
+										<h5>庆余年</h5>
+										<p>张若昀陈道明领衔群像传奇</p>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<a href="video-3.html"><img src="../images/1-2.webp"></a>
+									<div class="carousel-caption d-none d-md-block">
+										<h5>Re：从零开始的异世界生活</h5>
+										<p>普通高中生菜月昴穿越到异世界</p>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<a href="video-1.html"><img src="../images/1-3.jpg"></a>
+									<div class="carousel-caption d-none d-md-block">
+										<h5>中国机长</h5>
+										<p>英雄机组万米高空生死博弈</p>
+									</div>
+								</div>
+							</div>
+							<!-- 左右切换按钮 -->
+							<a class="carousel-control-prev" href="#demo" data-slide="prev">
+								<span class="carousel-control-prev-icon"></span>
+							</a>
+							<a class="carousel-control-next" href="#demo" data-slide="next">
+								<span class="carousel-control-next-icon"></span>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-12">
+						<div class="row">
+							<div class="col-md-6 col-sm-12">
+								<div class="video-card-reco">
+									<div class="info-box">
+										<a href="video.html" target="_blank">
+											<img src="../images/1-4.jpg" alt="从前有座灵剑山">
+											<div class="info">
+												<p title="从前有座灵剑山" class="title">从前有座灵剑山</p>
+												<p class="brief">许凯张榕容爆笑反套路试炼</p>
+												<p class="play"><img src="../images/bofangliang.svg">17.6亿次专辑播放</p>
+											</div>
+											<div class="watch-later-video van-watchlater black">
+												<span class="wl-tips" style="left: -21px; display: none;"></span>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-12">
+								<div class="video-card-reco">
+									<div class="info-box">
+										<a href="video-1.html" target="_blank">
+											<img src="../images/1-5.jpg"alt="我和我的祖国">
+											<div class="info">
+												<p title="我和我的祖国" class="title">我和我的祖国</p>
+												<p class="brief">主演：黄渤 张译 韩昊霖 杜江</p>
+												<p class="play"><img src="../images/bofangliang.svg">1亿播放</p>
+											</div>
+											<div class="watch-later-video van-watchlater black">
+												<span class="wl-tips" style="left: -21px; display: none;"></span>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row mt-3">
+							<div class="col-md-6 col-sm-12">
+								<div class="video-card-reco">
+									<div class="info-box">
+										<a href="video-2.html" target="_blank">
+											<img src="../images/1-6.jpg" alt="奇葩说6">
+											<div class="info">
+												<p title="奇葩说6" class="title">奇葩说6</p>
+												<p class="brief">傅首尔谈婚姻哽咽落泪 郭京飞称自己是“17线演员”</p>
+												<p class="play"><img src="../images/bofangliang.svg">3.7万播放</p>
+											</div>
+											<div class="watch-later-video van-watchlater black">
+												<span class="wl-tips" style="left: -21px; display: none;"></span>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-12">
+								<div class="video-card-reco">
+									<div class="info-box">
+										<a href="video-3.html" target="_blank">
+											<img src="../images/1-7.jpg" alt="狐妖小红娘">
+											<div class="info">
+												<p title="狐妖小红娘" class="title">狐妖小红娘</p>
+												<p class="brief">富家千金倒追贫穷男</p>
+												<p class="play"><img src="../images/bofangliang.svg">33.3亿次专辑播放</p>
+											</div>
+											<div class="watch-later-video van-watchlater black">
+												<span class="wl-tips" style="left: -21px; display: none;"></span>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</br>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-6">
+						<h5><img src="../images/dianshiju.svg">电视剧</h5>
+					</div>
+					<div class="col-6">
+						<a href="#" class="float-right">查看更多></a>
+					</div>
+				</div>
+				<hr style="margin-top: 0;" />
+				<div class="row">
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="video-card-common">
+							<div class="card-pic">
+								<a href="video.html" target="_blank"><img src="../images/2-1.jpg">
+									<div class="count">
+										<div class="left"><span><img src="../images/bofangliang.svg">7.5万</span><span><img src="../images/dianzanshu.svg">2739</span></div>
+										<div class="right"><span>01:49</span></div>
+									</div>
+									<div class="watch-later-video van-watchlater black"><span class="wl-tips" style="left: -21px; display: none;"></span></div>
+								</a>
+							</div>
+							<a href="video.html" target="_blank" title="梦回" class="title">梦回</a>
+							<p class="up">李兰迪王安宇跨时空秘恋</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="video-card-common">
+							<div class="card-pic">
+								<a href="video.html" target="_blank"><img src="../images/2-2.jpg">
+									<div class="count">
+										<div class="left"><span><img src="../images/bofangliang.svg">7.5万</span><span><img src="../images/dianzanshu.svg">2739</span></div>
+										<div class="right"><span>01:49</span></div>
+									</div>
+									<div class="watch-later-video van-watchlater black"><span class="wl-tips" style="left: -21px; display: none;"></span></div>
+								</a>
+							</div>
+							<a href="video.html" target="_blank" title="惹不起的殿下大人" class="title">惹不起的殿下大人</a>
+							<p class="up">娇妃开挂 破壁追爱</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="video-card-common">
+							<div class="card-pic">
+								<a href="video.html" target="_blank"><img src="../images/2-3.jpg">
+									<div class="count">
+										<div class="left"><span><img src="../images/bofangliang.svg">7.5万</span><span><img src="../images/dianzanshu.svg">2739</span></div>
+										<div class="right"><span>01:49</span></div>
+									</div>
+									<div class="watch-later-video van-watchlater black"><span class="wl-tips" style="left: -21px; display: none;"></span></div>
+								</a>
+							</div>
+							<a href="video.html" target="_blank" title="第二次也很美" class="title">第二次也很美</a>
+							<p class="up">王子文张鲁一带娃恋爱</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="video-card-common">
+							<div class="card-pic">
+								<a href="video.html" target="_blank"><img src="../images/2-4.jpg">
+									<div class="count">
+										<div class="left"><span><img src="../images/bofangliang.svg">7.5万</span><span><img src="../images/dianzanshu.svg">2739</span></div>
+										<div class="right"><span>01:49</span></div>
+									</div>
+									<div class="watch-later-video van-watchlater black"><span class="wl-tips" style="left: -21px; display: none;"></span></div>
+								</a>
+							</div>
+							<a href="video.html" target="_blank" title="反骗天下" class="title">反骗天下</a>
+							<p class="up">戏精调查员美少年携手破局</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="video-card-common">
+							<div class="card-pic">
+								<a href="video.html" target="_blank"><img src="../images/2-5.jpg">
+									<div class="count">
+										<div class="left"><span><img src="../images/bofangliang.svg">7.5万</span><span><img src="../images/dianzanshu.svg">2739</span></div>
+										<div class="right"><span>01:49</span></div>
+									</div>
+									<div class="watch-later-video van-watchlater black"><span class="wl-tips" style="left: -21px; display: none;"></span></div>
+								</a>
+							</div>
+							<a href="video.html" target="_blank" title="亲爱的，热爱的" class="title">亲爱的，热爱的</a>
+							<p class="up">杨紫李现追逐爱与梦想</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="video-card-common">
+							<div class="card-pic">
+								<a href="video.html" target="_blank"><img src="../images/2-6.jpg">
+									<div class="count">
+										<div class="left"><span><img src="../images/bofangliang.svg">7.5万</span><span><img src="../images/dianzanshu.svg">2739</span></div>
+										<div class="right"><span>01:49</span></div>
+									</div>
+									<div class="watch-later-video van-watchlater black"><span class="wl-tips" style="left: -21px; display: none;"></span></div>
+								</a>
+							</div>
+							<a href="video.html" target="_blank" title="极速救援" class="title">极速救援</a>
+							<p class="up">飞行医疗救援队与死神赛跑</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="video-card-common">
+							<div class="card-pic">
+								<a href="video.html" target="_blank"><img src="../images/2-7.jpg">
+									<div class="count">
+										<div class="left"><span><img src="../images/bofangliang.svg">7.5万</span><span><img src="../images/dianzanshu.svg">2739</span></div>
+										<div class="right"><span>45:24</span></div>
+									</div>
+									<div class="watch-later-video van-watchlater black"><span class="wl-tips" style="left: -21px; display: none;"></span></div>
+								</a>
+							</div>
+							<a href="video.html" target="_blank" title="我怕来不及" class="title">我怕来不及</a>
+							<p class="up">白洁和三个男人的真爱救赎</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="video-card-common">
+							<div class="card-pic">
+								<a href="video.html" target="_blank"><img src="../images/2-8.jpg">
+									<div class="count">
+										<div class="left"><span><img src="../images/bofangliang.svg">7.5万</span><span><img src="../images/dianzanshu.svg">2739</span></div>
+										<div class="right"><span>42:16</span></div>
+									</div>
+									<div class="watch-later-video van-watchlater black"><span class="wl-tips" style="left: -21px; display: none;"></span></div>
+								</a>
+							</div>
+							<a href="video.html" target="_blank" title="陈情令" class="title">陈情令</a>
+							<p class="up">肖战王一博共闯侠义江湖</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br />
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-6">
+						<h5><img src="../images/dianying.svg">电影</h5>
+					</div>
+					<div class="col-6">
+						<a href="#" class="float-right">查看更多></a>
+					</div>
+				</div>
+				<hr style="margin-top: 0;" />
+				<div class="row">
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="video-card-common">
+							<div class="card-pic">
+								<a href="video-1.html" target="_blank"><img src="../images/3-1.jpg">
+									<div class="count">
+										<div class="left"><span><img src="../images/bofangliang.svg">6亿</span><span><img src="../images/dianzanshu.svg">2739</span></div>
+										<div class="right"><span>01:49</span></div>
+									</div>
+									<div class="watch-later-video van-watchlater black"><span class="wl-tips" style="left: -21px; display: none;"></span></div>
+								</a>
+							</div>
+							<a href="video-1.html" target="_blank" title="哪吒之魔童降世" class="title">哪吒之魔童降世</a>
+							<p class="up">主演：瀚墨 张珈铭</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="video-card-common">
+							<div class="card-pic">
+								<a href="video-1.html" target="_blank"><img src="../images/3-2.jpg">
+									<div class="count">
+										<div class="left"><span><img src="../images/bofangliang.svg">51.55万</span><span><img src="../images/dianzanshu.svg">2739</span></div>
+										<div class="right"><span>1:33:48</span></div>
+									</div>
+									<div class="watch-later-video van-watchlater black"><span class="wl-tips" style="left: -21px; display: none;"></span></div>
+								</a>
+							</div>
+							<a href="video-1.html" target="_blank" title="催眠·裁决" class="title">催眠·裁决</a>
+							<p class="up">主演：张家辉 张翰 秦沛 郑则仕</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="video-card-common">
+							<div class="card-pic">
+								<a href="video-1.html" target="_blank"><img src="../images/3-3.jpg">
+									<div class="count">
+										<div class="left"><span><img src="../images/bofangliang.svg">2亿</span><span><img src="../images/dianzanshu.svg">2739</span></div>
+										<div class="right"><span>01:49</span></div>
+									</div>
+									<div class="watch-later-video van-watchlater black"><span class="wl-tips" style="left: -21px; display: none;"></span></div>
+								</a>
+							</div>
+							<a href="video-1.html" target="_blank" title="动物世界" class="title">动物世界</a>
+							<p class="up">主演：李易峰 迈克尔·道格拉斯 周冬雨</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="video-card-common">
+							<div class="card-pic">
+								<a href="video-1.html" target="_blank"><img src="../images/3-4.jpg">
+									<div class="count">
+										<div class="left"><span><img src="../images/bofangliang.svg">2亿</span><span><img src="../images/dianzanshu.svg">2739</span></div>
+										<div class="right"><span>01:49</span></div>
+									</div>
+									<div class="watch-later-video van-watchlater black"><span class="wl-tips" style="left: -21px; display: none;"></span></div>
+								</a>
+							</div>
+							<a href="video-1.html" target="_blank" title="环太平洋：雷霆再起" class="title">环太平洋：雷霆再起</a>
+							<p class="up">主演：约翰·博耶加 斯科特·伊斯特伍德</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="video-card-common">
+							<div class="card-pic">
+								<a href="video-1.html" target="_blank"><img src="../images/3-5.jpg">
+									<div class="count">
+										<div class="left"><span><img src="../images/bofangliang.svg">1亿</span><span><img src="../images/dianzanshu.svg">2739</span></div>
+										<div class="right"><span>2:15:31</span></div>
+									</div>
+									<div class="watch-later-video van-watchlater black"><span class="wl-tips" style="left: -21px; display: none;"></span></div>
+								</a>
+							</div>
+							<a href="video-1.html" target="_blank" title="少年的你" class="title">少年的你</a>
+							<p class="up">主演：周冬雨 易烊千玺 尹昉</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="video-card-common">
+							<div class="card-pic">
+								<a href="video-1.html" target="_blank"><img src="../images/3-6.jpg">
+									<div class="count">
+										<div class="left"><span><img src="../images/bofangliang.svg">7.5万</span><span><img src="../images/dianzanshu.svg">2739</span></div>
+										<div class="right"><span>01:49</span></div>
+									</div>
+									<div class="watch-later-video van-watchlater black"><span class="wl-tips" style="left: -21px; display: none;"></span></div>
+								</a>
+							</div>
+							<a href="video-1.html" target="_blank" title="最佳男友进化论" class="title">最佳男友进化论</a>
+							<p class="up">主演：郑恺 张雨绮 徐冬冬 方力申</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="video-card-common">
+							<div class="card-pic">
+								<a href="video-1.html" target="_blank"><img src="../images/3-7.jpg">
+									<div class="count">
+										<div class="left"><span><img src="../images/bofangliang.svg">7.5万</span><span><img src="../images/dianzanshu.svg">2739</span></div>
+										<div class="right"><span>45:24</span></div>
+									</div>
+									<div class="watch-later-video van-watchlater black"><span class="wl-tips" style="left: -21px; display: none;"></span></div>
+								</a>
+							</div>
+							<a href="video-1.html" target="_blank" title="无问西东" class="title">无问西东</a>
+							<p class="up">主演：章子怡 黄晓明 张震 王力宏</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="video-card-common">
+							<div class="card-pic">
+								<a href="video-1.html" target="_blank"><img src="../images/3-8.jpg">
+									<div class="count">
+										<div class="left"><span><img src="../images/bofangliang.svg">7.5万</span><span><img src="../images/dianzanshu.svg">2739</span></div>
+										<div class="right"><span>42:16</span></div>
+									</div>
+									<div class="watch-later-video van-watchlater black"><span class="wl-tips" style="left: -21px; display: none;"></span></div>
+								</a>
+							</div>
+							<a href="video-1.html" target="_blank" title="速度与激情：特别行动" class="title">速度与激情：特别行动</a>
+							<p class="up">主演：道恩·强森 杰森·斯坦森</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br />
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-6">
+						<h5><img src="../images/zongyi.svg">综艺</h5>
+					</div>
+					<div class="col-6">
+						<a href="#" class="float-right">查看更多></a>
+					</div>
+				</div>
+				<hr style="margin-top: 0;" />
+				<div class="row">
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="video-card-common">
+							<div class="card-pic">
+								<a href="video-2.html" target="_blank"><img src="../images/4-1.jpg">
+									<div class="count">
+										<div class="left"><span><img src="../images/bofangliang.svg">6亿</span><span><img src="../images/dianzanshu.svg">2739</span></div>
+										<div class="right"><span>01:49</span></div>
+									</div>
+									<div class="watch-later-video van-watchlater black"><span class="wl-tips" style="left: -21px; display: none;"></span></div>
+								</a>
+							</div>
+							<a href="video-2.html" target="_blank" title="吐槽大会 第四季" class="title">吐槽大会 第四季</a>
+							<p class="up">周六 20:00 更新</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="video-card-common">
+							<div class="card-pic">
+								<a href="video-2.html" target="_blank"><img src="../images/4-2.jpg">
+									<div class="count">
+										<div class="left"><span><img src="../images/bofangliang.svg">51.55万</span><span><img src="../images/dianzanshu.svg">2739</span></div>
+										<div class="right"><span>1:33:48</span></div>
+									</div>
+									<div class="watch-later-video van-watchlater black"><span class="wl-tips" style="left: -21px; display: none;"></span></div>
+								</a>
+							</div>
+							<a href="video-2.html" target="_blank" title="主持人大赛" class="title">主持人大赛</a>
+							<p class="up">周六 20:00 更新</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="video-card-common">
+							<div class="card-pic">
+								<a href="video-2.html" target="_blank"><img src="../images/4-3.jpg">
+									<div class="count">
+										<div class="left"><span><img src="../images/bofangliang.svg">2亿</span><span><img src="../images/dianzanshu.svg">2739</span></div>
+										<div class="right"><span>01:49</span></div>
+									</div>
+									<div class="watch-later-video van-watchlater black"><span class="wl-tips" style="left: -21px; display: none;"></span></div>
+								</a>
+							</div>
+							<a href="video-2.html" target="_blank" title="综艺大爆炸" class="title">综艺大爆炸</a>
+							<p class="up">周一至周日 12:00 更新</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="video-card-common">
+							<div class="card-pic">
+								<a href="video-2.html" target="_blank"><img src="../images/4-4.jpg">
+									<div class="count">
+										<div class="left"><span><img src="../images/bofangliang.svg">2亿</span><span><img src="../images/dianzanshu.svg">2739</span></div>
+										<div class="right"><span>01:49</span></div>
+									</div>
+									<div class="watch-later-video van-watchlater black"><span class="wl-tips" style="left: -21px; display: none;"></span></div>
+								</a>
+							</div>
+							<a href="video-2.html" target="_blank" title="爱情保卫战" class="title">爱情保卫战</a>
+							<p class="up">周二至周四 22:00 更新</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="video-card-common">
+							<div class="card-pic">
+								<a href="video-2.html" target="_blank"><img src="../images/4-5.jpg">
+									<div class="count">
+										<div class="left"><span><img src="../images/bofangliang.svg">1亿</span><span><img src="../images/dianzanshu.svg">2739</span></div>
+										<div class="right"><span>2:15:31</span></div>
+									</div>
+									<div class="watch-later-video van-watchlater black"><span class="wl-tips" style="left: -21px; display: none;"></span></div>
+								</a>
+							</div>
+							<a href="video-2.html" target="_blank" title="令人心动的offer" class="title">令人心动的offer</a>
+							<p class="up">周三 22:00 更新</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="video-card-common">
+							<div class="card-pic">
+								<a href="video-2.html" target="_blank"><img src="../images/4-6.jpg">
+									<div class="count">
+										<div class="left"><span><img src="../images/bofangliang.svg">7.5万</span><span><img src="../images/dianzanshu.svg">2739</span></div>
+										<div class="right"><span>01:49</span></div>
+									</div>
+									<div class="watch-later-video van-watchlater black"><span class="wl-tips" style="left: -21px; display: none;"></span></div>
+								</a>
+							</div>
+							<a href="video-2.html" target="_blank" title="幸福三重奏 第2季" class="title">幸福三重奏 第2季</a>
+							<p class="up">周四 20:00 更新</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="video-card-common">
+							<div class="card-pic">
+								<a href="video-2.html" target="_blank"><img src="../images/4-7.jpg">
+									<div class="count">
+										<div class="left"><span><img src="../images/bofangliang.svg">7.5万</span><span><img src="../images/dianzanshu.svg">2739</span></div>
+										<div class="right"><span>45:24</span></div>
+									</div>
+									<div class="watch-later-video van-watchlater black"><span class="wl-tips" style="left: -21px; display: none;"></span></div>
+								</a>
+							</div>
+							<a href="video-2.html" target="_blank" title="亲爱的客栈 第3季" class="title">亲爱的客栈 第3季</a>
+							<p class="up">周五 22:30 更新</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="video-card-common">
+							<div class="card-pic">
+								<a href="video-2.html" target="_blank"><img src="../images/4-8.jpg">
+									<div class="count">
+										<div class="left"><span><img src="../images/bofangliang.svg">7.5万</span><span><img src="../images/dianzanshu.svg">2739</span></div>
+										<div class="right"><span>42:16</span></div>
+									</div>
+									<div class="watch-later-video van-watchlater black"><span class="wl-tips" style="left: -21px; display: none;"></span></div>
+								</a>
+							</div>
+							<a href="video-2.html" target="_blank" title="鲁豫有约" class="title">鲁豫有约</a>
+							<p class="up">周一至周五 10:50 更新</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br />
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-6">
+						<h5><img src="../images/dongman.svg">动漫</h5>
+					</div>
+					<div class="col-6">
+						<a href="#" class="float-right">查看更多></a>
+					</div>
+				</div>
+				<hr style="margin-top: 0;" />
+				<div class="row">
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="video-card-common">
+							<div class="card-pic">
+								<a href="video-3.html" target="_blank"><img src="../images/5-1.jpg">
+									<div class="count">
+										<div class="left"><span><img src="../images/bofangliang.svg">6亿</span><span><img src="../images/dianzanshu.svg">2739</span></div>
+										<div class="right"><span>01:49</span></div>
+									</div>
+									<div class="watch-later-video van-watchlater black"><span class="wl-tips" style="left: -21px; display: none;"></span></div>
+								</a>
+							</div>
+							<a href="video-3.html" target="_blank" title="名侦探柯南" class="title">名侦探柯南</a>
+							<p class="up">更新至1020话</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="video-card-common">
+							<div class="card-pic">
+								<a href="video-3.html" target="_blank"><img src="../images/5-2.jpg">
+									<div class="count">
+										<div class="left"><span><img src="../images/bofangliang.svg">51.55万</span><span><img src="../images/dianzanshu.svg">2739</span></div>
+										<div class="right"><span>1:33:48</span></div>
+									</div>
+									<div class="watch-later-video van-watchlater black"><span class="wl-tips" style="left: -21px; display: none;"></span></div>
+								</a>
+							</div>
+							<a href="video-3.html" target="_blank" title="我的英雄学院 第四季" class="title">我的英雄学院 第四季</a>
+							<p class="up">更新至9话</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="video-card-common">
+							<div class="card-pic">
+								<a href="video-3.html" target="_blank"><img src="../images/5-3.jpg">
+									<div class="count">
+										<div class="left"><span><img src="../images/bofangliang.svg">2亿</span><span><img src="../images/dianzanshu.svg">2739</span></div>
+										<div class="right"><span>01:49</span></div>
+									</div>
+									<div class="watch-later-video van-watchlater black"><span class="wl-tips" style="left: -21px; display: none;"></span></div>
+								</a>
+							</div>
+							<a href="video-3.html" target="_blank" title="一拳超人 第二季" class="title">一拳超人 第二季</a>
+							<p class="up">13话全</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="video-card-common">
+							<div class="card-pic">
+								<a href="video-3.html" target="_blank"><img src="../images/5-4.jpg">
+									<div class="count">
+										<div class="left"><span><img src="../images/bofangliang.svg">2亿</span><span><img src="../images/dianzanshu.svg">2739</span></div>
+										<div class="right"><span>01:49</span></div>
+									</div>
+									<div class="watch-later-video van-watchlater black"><span class="wl-tips" style="left: -21px; display: none;"></span></div>
+								</a>
+							</div>
+							<a href="video-3.html" target="_blank" title="犬夜叉" class="title">犬夜叉</a>
+							<p class="up">167话全</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="video-card-common">
+							<div class="card-pic">
+								<a href="video-3.html" target="_blank"><img src="../images/5-5.jpg">
+									<div class="count">
+										<div class="left"><span><img src="../images/bofangliang.svg">1亿</span><span><img src="../images/dianzanshu.svg">2739</span></div>
+										<div class="right"><span>2:15:31</span></div>
+									</div>
+									<div class="watch-later-video van-watchlater black"><span class="wl-tips" style="left: -21px; display: none;"></span></div>
+								</a>
+							</div>
+							<a href="video-3.html" target="_blank" title="秦时明月之君临天下" class="title">秦时明月之君临天下</a>
+							<p class="up">75话全</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="video-card-common">
+							<div class="card-pic">
+								<a href="video-3.html" target="_blank"><img src="../images/5-6.jpg">
+									<div class="count">
+										<div class="left"><span><img src="../images/bofangliang.svg">7.5万</span><span><img src="../images/dianzanshu.svg">2739</span></div>
+										<div class="right"><span>01:49</span></div>
+									</div>
+									<div class="watch-later-video van-watchlater black"><span class="wl-tips" style="left: -21px; display: none;"></span></div>
+								</a>
+							</div>
+							<a href="video-3.html" target="_blank" title="镇魂街" class="title">镇魂街</a>
+							<p class="up">24话全</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="video-card-common">
+							<div class="card-pic">
+								<a href="video-3.html" target="_blank"><img src="../images/5-7.jpg">
+									<div class="count">
+										<div class="left"><span><img src="../images/bofangliang.svg">7.5万</span><span><img src="../images/dianzanshu.svg">2739</span></div>
+										<div class="right"><span>45:24</span></div>
+									</div>
+									<div class="watch-later-video van-watchlater black"><span class="wl-tips" style="left: -21px; display: none;"></span></div>
+								</a>
+							</div>
+							<a href="video-3.html" target="_blank" title="少年锦衣卫" class="title">少年锦衣卫</a>
+							<p class="up">28话全</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="video-card-common">
+							<div class="card-pic">
+								<a href="video-3.html" target="_blank"><img src="../images/5-8.jpg">
+									<div class="count">
+										<div class="left"><span><img src="../images/bofangliang.svg">7.5万</span><span><img src="../images/dianzanshu.svg">2739</span></div>
+										<div class="right"><span>42:16</span></div>
+									</div>
+									<div class="watch-later-video van-watchlater black"><span class="wl-tips" style="left: -21px; display: none;"></span></div>
+								</a>
+							</div>
+							<a href="video-3.html" target="_blank" title="天行九歌" class="title">天行九歌</a>
+							<p class="up">60话全</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<div class="mainfooter-area">
+		  <div class="container-fluid">
+		    <div class="row mx-md-5">
+		      <div class="col-md-3 col-sm-12">
+		        <div class="ll-footer-about text-center text-md-left">
+		          <h2>关于本站</h2>
+		          <p>版权所有&copy;：江西师范大学软件学院17级移动三班温鑫斌</p>
+				  <p>地址：江西省南昌市南昌县紫阳大道99号</p>
+				  <p>本站所有资源均来源于网络，若有侵权请及时联系</p>
+		        </div>
+		      </div>
+		      <div class="col-md-3 col-sm-12">
+		        <div class="ll-footer-ourcompany text-md-left text-center pl-0">
+		          <h2>联系我们</h2>
+				  <a href="">邮箱地址：XXX</a>
+				  <a href="">客服热线：XXX</a>
+				  <a href="">官方微博：XXX</a>
+				  <a href="">官方微信：XXX</a>
+				  <a href="">官方QQ：XXX</a>
+		        </div>
+		      </div>
+		      <div class="col-md-3 col-sm-12">
+		        <div class="ll-footer-faq text-md-left text-center pl-0">
+		          <h2>友情链接</h2>
+		          <a href="https://www.jxnu.edu.cn/">江西师范大学官网</a>
+		          <a href="https://jwc.jxnu.edu.cn/Portal/Index.aspx">江西师范大学教务在线</a>
+		          <a href="https://rjxy.jxnu.edu.cn/">江西师范大学软件学院</a>
+		          <a href="https://xgw.jxnu.edu.cn/">江西师范大学学生处</a>
+		          <a href="https://zs.jxnu.edu.cn/">江西师范大学本科招生网</a>
+		        </div>
+		      </div>
+		      <div class="col-md-3 col-sm-12 text-md-left text-center">
+		        <h2>订阅</h2>
+		        <div class="ll-footer-newsletter">
+		          <p>订阅以获取最新新闻、更新和推送信息。别担心，我们不会发垃圾邮件的！</p>
+		
+		          <!--Footer Newsletter Subscription-->
+		          <div class="ll-subscription">
+		            <form autocomplete="off" action="/subscribe" method="post">
+		              <div class="ll-flex">
+		                <div style="flex: 1 1 0%;">
+		                  <input type="email" name="email" placeholder="john@example.com">
+		                </div>
+		                <div style="margin-left: -20px;">
+		                  <button type="submit" disabled="disabled">&#8594;</button>
+		                </div>
+		              </div>
+		            </form>
+		          </div>
+		          <!--End Footer Newsletter Subscription-->
+		
+		          <!--Footer Social Media-->
+		          <div class="ll-socialmedia">
+		            <a class="social-facebook" href=""><i class="fa fa-facebook"></i></a>
+		            <a class="social-twitter" href=""><i class="fa fa-twitter"></i></a>
+		            <a class="social-instagram" href=""><i class="fa fa-instagram"></i></a>
+		            <a class="social-googleplus" href=""><i class="fa fa-google-plus"></i></a>
+		            <a class="social-pinterest" href=""><i class="fa fa-pinterest-p"></i></a>
+		          </div>
+		          <!--End Footer Social Media-->
+		
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<script>
+			$(function() {
+				$(".navbar-bg").ripples({
+					resolution: 100,
+					perturbance: 0.01,
+				});
+			});
+		</script>
+	</body>
+</html>
