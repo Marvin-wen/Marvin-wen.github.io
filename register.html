@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>注册</title>
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+		<script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+		<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="https://cdn.bootcss.com/vide/0.5.1/jquery.vide.js"></script>
+		<link type="text/css" rel="stylesheet" href="../css/basement.css" />
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+		<style>
+			body{
+				height: 100vh;
+			}
+		</style>
+	</head>
+	<body data-vide-bg="../video/login">
+		<form class="needs-validation col-md-4 col-sm-6 p-5" novalidate>
+			<span class="badge badge-success"><a href="index.html">返回主页</a></span>
+			<h3 class="text-center">注册</h3>
+			<div class="form-row">
+				<div class="col-12 mt-4">
+					<div class="input-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text">账号</span>
+						</div>
+						<input type="text" class="form-control" required pattern="[A-Za-z0-9]{6,30}">
+						<div class="invalid-feedback">
+							请输入账号为6-30位大小写字母或数字！
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="col-12 mt-4">
+					<div class="input-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text">密码</span>
+						</div>
+						<input type="password" class="form-control" required pattern="[A-Za-z0-9]{6,30}">
+						<div class="invalid-feedback">
+							请输入密码为6-30位大小写字母或数字！
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="col-12 mt-4">
+					<div class="input-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text">电话</span>
+						</div>
+						<input type="tel" class="form-control" required pattern="^1[3456789]\d{9}$">
+						<div class="invalid-feedback">
+							请输入11位合法手机号码！
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="col-12 mt-4">
+					<div class="input-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text">邮箱</span>
+						</div>
+						<input type="email" class="form-control" required pattern="^([a-zA-Z]|[0-9])(\w|\-)+@[a-zA-Z0-9]+\.([a-zA-Z]{2,4})$">
+						<div class="invalid-feedback">
+							请输入合法邮箱地址！
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="form-group mt-4">
+				<div class="custom-control custom-switch">
+					<input type="checkbox" class="custom-control-input" id="customSwitch1">
+					<label class="custom-control-label" for="customSwitch1">记住密码</label>
+				</div>
+			</div>
+			<button class="btn btn-primary mb-3" type="submit">立即注册</button><button class="btn btn-danger mb-3 pull-right" type="button"><a href="login.html">前往登录</a></button>
+		</form>
+
+		<script>
+			(function() {
+				'use strict';
+				window.addEventListener('load', function() {
+					var forms = document.getElementsByClassName('needs-validation');
+					var validation = Array.prototype.filter.call(forms, function(form) {
+						form.addEventListener('submit', function(event) {
+							if (form.checkValidity() === false) {
+								event.preventDefault();
+								event.stopPropagation();
+							}
+							form.classList.add('was-validated');
+						}, false);
+					});
+				}, false);
+			})();
+		</script>
+	</body>
+</html>
